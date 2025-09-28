@@ -67,6 +67,6 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, HomeActivity::class.java)
         intent.putExtra("USERNAME", etUsername.text.toString())
         startActivity(intent)
-        finish() // Cierra el login para que no se pueda volver con el botón atrás
+        finish()
     }
 }
