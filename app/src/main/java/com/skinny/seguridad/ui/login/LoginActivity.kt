@@ -67,6 +67,6 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, HomeActivity::class.java)
         intent.putExtra("USERNAME", etUsername.text.toString())
         startActivity(intent)
-        finish()
+        finish()//cierra el login
     }
 }
