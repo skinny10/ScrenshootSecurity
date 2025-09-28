@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
         val username = etUsername.text.toString().trim()
         val password = etPassword.text.toString().trim()
 
-        // Validaciones básicas
+
         if (username.isEmpty()) {
             etUsername.error = "Ingresa tu usuario"
             return
@@ -53,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
-        // Validación simple (en una app real usarías un servidor)
+
         if (username == "admin" && password == "123456") {
             // Login exitoso
             Toast.makeText(this, "¡Bienvenido!", Toast.LENGTH_SHORT).show()
